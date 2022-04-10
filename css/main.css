@@ -596,19 +596,6 @@ textarea {
   .navbar .logo {
     margin-left: -180px;
   }
-  .navbar-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 80px;
-    z-index: 1;
-  }
   .navbar-container .list-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -641,6 +628,7 @@ textarea {
     text-align: center;
   }
   .navbar-container .uls {
+    background-color: #131313;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -648,27 +636,21 @@ textarea {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 0 165px 0 0;
     position: absolute;
     top: -1000px;
     opacity: 0;
     -webkit-transform: all 0.5s ease;
             transform: all 0.5s ease;
-  }
-  .navbar-container .uls.active {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    background-color: #131313;
-    top: 100%;
-    opacity: 1;
-    margin: 0 165px 0 0;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    z-index: 999;
     font-size: 1.2rem;
-    height: 70vh;
-    width: 100%;
+    height: 80vh;
+    z-index: 999;
+    margin-right: 146px;
+  }
+  .navbar-container .uls.active {
+    top: 100%;
+    opacity: 1;
   }
   .navbar-container .navbar-toggle {
     width: 30px;
@@ -961,6 +943,10 @@ textarea {
   height: auto;
 }
 
+.about-section .description-about {
+  max-width: 700px;
+}
+
 .about-section .description-about p {
   line-height: 30px;
   letter-spacing: 1px;
@@ -972,7 +958,7 @@ textarea {
 }
 
 .about-section .skills {
-  width: 300px;
+  width: 500px;
   height: 300px;
   padding: 0 20px;
   margin-top: -50px;
